@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  react-app:
+    build: .
+    container_name: candidate-frontend-test
+    ports:
+      - "3000:80"
+    env_file:
+      - .env
